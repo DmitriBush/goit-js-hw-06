@@ -1,6 +1,6 @@
-let counterValue = 0;
-
 let valueEl = document.querySelector("#value");
+
+let counterValue = 0;
 
 const dekrementBtn = document.querySelector("#counter").firstElementChild;
 const inkrementBtn = document.querySelector("#counter").lastElementChild;
@@ -8,11 +8,11 @@ const inkrementBtn = document.querySelector("#counter").lastElementChild;
 dekrementBtn.addEventListener("click", () => {
   counterValue -= 1;
 
-  valueEl.innerText = counterValue;
+  valueEl.textContent = counterValue;
 });
 
 inkrementBtn.addEventListener("click", () => {
   counterValue += 1;
 
-  valueEl.innerText = counterValue;
+  valueEl.textContent = counterValue;
 });

@@ -18,6 +18,14 @@ const listEl = document.querySelector(".gallery");
 images.forEach((elem) => {
   listEl.insertAdjacentHTML(
     "afterbegin",
-    `<li><img src = "${elem.url}" alt = "${elem.alt}" width = 500 /></li>`
+    `<li><img src = "${elem.url}" alt = "${elem.alt}" width = 555 /></li>`
   );
+});
+
+const listEl = document.querySelector(".gallery");
+const gallery = [];
+images.forEach((image) => {
+  const item = document.createElement("li");
+  item.className = "item";
+  item.textContent = "image";
 });
